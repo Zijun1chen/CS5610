@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+
+<div style="float: left; width: 10%;">
+  <p><ul>
+        <li><a href="#">Account</a></li>
+        <li><a href="..\profile\index.html">Profile</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+    </ul></p>
+</div>
+
+<div style="float: left; width: 15%;">
+  <p><ul>
+    <li><a href="..\home.html">Home</a></li>
+    <li><a href="#">Modules</a></li>
+    <li><a href="#">Piazza</a></li>
+    <li><a href="#">Zoom Meetings</a></li>
+    <li><a href="#">Assignments</a></li>
+    <li><a href="#">Quizzes</a></li>
+    <li><a href="..\grades.html">Grades</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">Panopto Video</a></li>
+    <li><a href="#">Discussions</a></li>
+    <li><a href="#">Announcements</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">files</a></li>
+    <li><a href="#">Rubrics</a></li>
+    <li><a href="#">Outcomes</a></li>
+    <li><a href="#">Collaborations</a></li>
+    <li><a href="#">Syllabus</a></li>
+    <li><a href="../course-details.html">Settings</a></li>
+ </ul></p>
+</div>
+
+  <div style="float: left; width: 75%;">
+    <p>
+      <select id="publish-all">
+        <option value="COMEDY">Comedy</option>
+        <option value="DRAMA">Drama</option>
+        <option selected value="SCIFI">
+            SpeedGrader</option>
+        <option value="FANTASY">Fantasy</option>
+      </select></p>
+
+      <h3>Assignment Name
+      <p><input id="a1-env+html" placeholder="A1-ENV+HTML"/></p>
+      <textarea id="assignment-description" rows="4" cols="30" placeholder="This is the assignment description."></textarea>
+       </h3>
+
+      <h4>Points<br/>
+      <input id="points" placeholder="100"/></h4>
+
+      <h4>Assignment Group<br/>
+        <select id="publish-all">
+          <option value="COMEDY">Comedy</option>
+          <option value="DRAMA">Drama</option>
+          <option selected value="SCIFI">
+              ASSIGNMENTS</option>
+          <option value="FANTASY">Fantasy</option>
+        </select></h4>
+
+      <h4>Display Grade as<br/>
+        <select id="publish-all">
+          <option value="COMEDY">Comedy</option>
+          <option value="DRAMA">Drama</option>
+          <option selected value="SCIFI">
+              Percentage</option>
+          <option value="FANTASY">Fantasy</option>
+          </select></h4>  
+
+      <h4>Submisstion Type<br/>
+        <select id="publish-all">
+          <option value="COMEDY">Comedy</option>
+          <option value="DRAMA">Drama</option>
+          <option selected value="SCIFI">
+              Online</option>
+          <option value="FANTASY">Fantasy</option>
+        </select></h4>
+    
+      <label>Online Entry Options</label>
+      <br/>
+      <input type="checkbox" value="Text Entry"
+            name="check-genre" id="chkbox-comedy"/>
+      <label for="chkbox-comedy">Text Entry</label>    <br/>
+      <input type="checkbox" value="Website URL"
+            name="check-genre" id="chkbox-drama"/>
+      <label for="chkbox-drama">Website URL</label>    <br/>
+      <!-- <input type="checkbox" value="SCIFI"
+      name="check-genre" id="chkbox-scifi" checked/> -->
+      <input type="checkbox" value="SCIFI"
+            name="check-genre" id="chkbox-scifi"/>
+      <label for="chkbox-scifi">Media Recordings</label> <br/>
+      <input type="checkbox" value="FANTASY"
+            name="check-genre" id="chkbox-fantasy"/>
+      <label for="chkbox-fantasy">Student Annotation</label> <br/>
+      <input type="checkbox" value="FANTASY"
+            name="check-genre" id="chkbox-fantasy"/>
+      <label for="chkbox-fantasy">File Uploads</label>
+
+      <h4>Submisstion Attemts<br/>
+        <select id="publish-all">
+          <option value="COMEDY">Comedy</option>
+          <option value="DRAMA">Drama</option>
+          <option selected value="SCIFI">
+              Unlimited</option>
+          <option value="FANTASY">Fantasy</option>
+        </select></h4>
+
+      <h4>Plagiarism Review<br/>
+        <select id="publish-all">
+          <option value="COMEDY">Comedy</option>
+          <option value="DRAMA">Drama</option>
+          <option selected value="SCIFI">
+              None</option>
+          <option value="FANTASY">Fantasy</option>
+        </select></h4>
+
+      <label>Group Assignment</label>
+      <br/>
+      <input type="checkbox" value="Text Entry"
+            name="check-genre" id="chkbox-comedy"/>
+      <label for="chkbox-comedy">This is a group assignment</label><br/>
+
+      <p><label>Peer Reviews</label>
+      <br/>
+      <input type="checkbox" value="Text Entry"
+            name="check-genre" id="chkbox-comedy"/>
+      <label for="chkbox-comedy">Require Peer Reviews</label><br/></p>
+
+      <label>Assign</label><br/>
+      <label>Assign to<br/></label>
+        <input id="points" placeholder="Everyone"/></h4>
+
+      <p><label for="text-fields-due">
+        Due</label><br/>
+      <input type="date"
+            id="text-fields-due"
+            value="2021-01-01"/><br/></p>
+
+      <p><label for="text-fields-due">
+        Available from</label><br/>
+      <input type="date"
+            id="text-fields-due"
+            value="2021-01-01"/><br/></p>
+
+      <p><label for="text-fields-due">
+        Until</label><br/>
+      <input type="date"
+            id="text-fields-due"
+            value="2021-01-01"/><br/></p>
+
+      <p><button type="button">Cancel</button>
+      <button type="button">Save</button></p>
+</div>
+<div style="clear: both;"></div>
+  </body>
+</html>
