@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+
+<div style="float: left; width: 10%;">
+  <p><ul>
+        <li><a href="#">Account</a></li>
+        <li><a href="..\profile\index.html">Profile</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="..\home.html">Courses</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+    </ul></p>
+</div>
+
+<div style="float: left; width: 15%;">
+  <p><ul>
+    <li><a href="..\home.html">Home</a></li>
+    <li><a href="#">Modules</a></li>
+    <li><a href="#">Piazza</a></li>
+    <li><a href="#">Zoom Meetings</a></li>
+    <li><a href="#">Assignments</a></li>
+    <li><a href="#">Quizzes</a></li>
+    <li><a href="..\grades.html">Grades</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">Panopto Video</a></li>
+    <li><a href="#">Discussions</a></li>
+    <li><a href="#">Announcements</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">files</a></li>
+    <li><a href="#">Rubrics</a></li>
+    <li><a href="#">Outcomes</a></li>
+    <li><a href="#">Collaborations</a></li>
+    <li><a href="#">Syllabus</a></li>
+    <li><a href="../course-details.html">Settings</a></li>
+ </ul></p>
+</div>
+
+
+<div style="float: left; width: 45%;">
+  <style>
+    .container {
+        display: flex;
+        align-items: center; /* 垂直居中对齐 */
+    }
+  
+    .spacer {
+        flex: 1;
+    }</style>
+  <h4 class="container">
+    <div class="spacer"></div> <!-- 第一个空白 -->
+    <span><a href="../course-details.html">Course Details</a></span><br/>
+    <div class="spacer"></div> <!-- 第二个空白 -->
+    <span><a href="../navigation.html">Navigation</a></span><br/>
+    <div class="spacer"></div> <!-- 第三个空白 -->
+  </h4>
+</div>
+<div style="float: left; width: 45%;">
+  <h1>Course Details</h1>
+</div>
+
+<style>
+  table {
+      border: none;
+      border-collapse: collapse;
+      width: 45%;
+  }
+
+  table tr {
+      height: 50px;
+  }
+  table td, table th {
+    vertical-align: top;
+}
+</style>
+
+<table>  <!--important-->
+  <thead>
+      <tr>
+          <th>Image: </th>
+          <th>
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                  Choose Image: <input type="file" name="file">
+                  <input type="submit" value="Upload">
+              </form>
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Name: </td>
+          <td>CS5610 17367 Web Development </td>
+      </tr>
+      <tr>
+          <td>Course Code: </td>
+          <td>CS5610.17367.202410</td>
+      </tr>
+      <tr>
+          <td>Blueprint Course: </td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Course Template: </td>
+          <td><button type="button">Enable course as a Course Template</button></td>
+      </tr>
+      <tr>
+          <td>Time Zone: </td>
+          <td>
+              <select id="publish-all">
+                  <option value="COMEDY">Comedy</option>
+                  <option value="DRAMA">Drama</option>
+                  <option selected value="SCIFI">Eastern Time</option>
+                  <option value="FANTASY">Fantasy</option>
+              </select>
+          </td>
+      </tr>
+      <tr>
+          <td>SIS ID: </td>
+          <td>CS5610.17367.202410</td>
+      </tr>
+      <tr>
+          <td>Subaccount: </td>
+          <td><a href="#">CS grad</a></td>
+      </tr>
+      <tr>
+          <td>Term: </td>
+          <td>202410_1 Fall 2023 Semester Full Term</td>
+      </tr>
+      <tr>
+        <td>Participation: </td>
+        <td>
+            <select id="publish-all">
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">Term</option>
+                <option value="FANTASY">Fantasy</option>
+            </select>
+            <br/>
+    
+            <p>Start: 
+                <input type="date" id="text-fields-start" value="2021-01-01"/>
+            </p>
+            <p>End: 
+                <input type="date" id="text-fields-end" value="2021-01-01"/>
+            </p>
+            <input type="checkbox" value="SCIFI" name="check-genre" id="chkbox-scifi"/>
+            <label for="chkbox-scifi">Restrict students from viewing course before term start date</label>
+            <br/>
+            <input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+            <label for="chkbox-fantasy">Restrict students from viewing course after term end date</label>
+        </td>
+    </tr>
+    <tr>
+      <td>Default due time: </td>
+      <td><select id="publish-all">
+        <option value="COMEDY">Comedy</option>
+        <option value="DRAMA">Drama</option>
+        <option selected value="SCIFI">Account default</option>
+        <option value="FANTASY">Fantasy</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>Language: </td>
+    <td><select id="publish-all">
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option selected value="SCIFI">Not set</option>
+      <option value="FANTASY">Fantasy</option>
+  </select></td>
+</tr>
+<tr>
+  <td>File Storage: </td>
+  <td>10000 megabytes</td>
+</tr>
+<tr>
+  <td>Large Course: </td>
+  <td><input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+    <label for="chkbox-fantasy">Launch SpeedGrader Filtered by Student Group</label>
+</td>
+</tr>
+<tr>
+  <td>Grading Scheme: </td>
+  <td><input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+    <label for="chkbox-fantasy">Enable course grading scheme</label>
+</td>
+</tr>
+<tr>
+  <td>Liense: </td>
+  <td><select id="publish-all">
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">Private</option>
+    <option value="FANTASY">Fantasy</option>
+</select>
+</td>
+</tr>
+<tr>
+  <td>File Copyright: </td>
+  <td><input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+    <label for="chkbox-fantasy">Copyright and liense information must be provided for files before they are published.</label>
+</td>
+</tr>
+<tr>
+  <td>Visibility: </td>
+  <td>
+    If you need to make your course public please contact your administration/support.<br/>
+    <select id="publish-all">
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">Course</option>
+    <option value="FANTASY">Fantasy</option>
+</select><br/>
+<input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+<label for="chkbox-fantasy">Include this course in the public course index</label>
+</td>
+</tr>
+<tr>
+  <td>Format: </td>
+  <td><select>
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">On-Campus</option>
+    <option value="FANTASY">Fantasy</option>
+</select>
+</td>
+</tr>
+<tr>
+  <td>Mastery Paths: </td>
+  <td><input type="checkbox" value="FANTASY" name="check-genre" id="chkbox-fantasy"/>
+    <label for="chkbox-fantasy">Enable individual learning paths for students based on assessment</label>
+</td>
+</tr>
+<tr>
+  <td>Description: </td>
+  <td><textarea id="assignment-description" rows="4" cols="50" placeholder=" "></textarea>
+</td>
+</tr>
+  </tbody>
+  <!-- 
+  <tfoot>
+      <tr>
+          <td colspan="3">Average</td>
+          <td>90</td>
+      </tr>
+  </tfoot> 
+  -->
+</table>
+
+
+
+
+
+</div>
+<div style="clear: both;"></div>
+  </body>
+</html>
