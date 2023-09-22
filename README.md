@@ -1,1 +1,1 @@
-# CS5610
+# kanbas-react-web-app
