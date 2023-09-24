@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Screen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        .fa-check {
+            color: green;
+        }
+
+        .selected-link {
+            color: black;
+            border-left: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Course Name - Term - Section</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="row">
+        <!-- Kanbas Navigation Sidebar -->
+        <div class="col-lg-3 col-md-4 d-none d-md-block">
+            <!-- content here -->
+            <a href="#" class="selected-link d-block p-2">Home</a>
+        </div>
+
+        <!-- Course Navigation Sidebar -->
+        <div class="col-lg-3 col-md-4 d-none d-md-block">
+            <!-- content here -->
+        </div>
+
+        <!-- Course's Modules -->
+        <div class="col-lg-4 col-md-8 col-sm-12">
+            <div class="list-group">
+                <!-- Module 1 -->
+                <a href="#" class="list-group-item list-group-item-secondary">Week 0 - Module Title</a>
+                <a href="#" class="list-group-item">Introduction to the course</a>
+                <a href="#" class="list-group-item pl-4">Indented Title</a>
+
+                <!-- Module 2 -->
+                <a href="#" class="list-group-item list-group-item-secondary">Week 1 - Module Title</a>
+                <a href="#" class="list-group-item">Content Title</a>
+                <a href="#" class="list-group-item pl-4">Indented Title</a>
+            </div>
+        </div>
+
+        <!-- Right Side Buttons & Links -->
+        <div class="col-lg-2 d-none d-lg-block">
+            <button class="btn btn-secondary float-end">Module <i class="fas fa-plus"></i></button>
+            <!-- ... Other buttons, icons and links ... -->
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

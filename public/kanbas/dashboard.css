@@ -1,0 +1,83 @@
+
+.course-container {
+  padding-left: calc(15px + [width of the Kanbas Navigation sidebar]);
+  padding-left: 15px; /* spacing between Kanbas sidebar and courses */
+}
+
+.course-wrapper {
+  padding: 35px 15px; /* This ensures spacing above and below between 30-40px */
+  box-sizing: border-box;
+  max-width: 270px; /* Ensure the width doesn't exceed 270px */
+  min-width: 250px; /* Ensure the width doesn't go below 250px */
+}
+
+.course-wrapper {
+  width: 260px; /* Set a fixed width for course cards */
+  margin-bottom: 35px;
+}
+
+.card {
+  width: 260px; /* Keep within the range of 250-270px */
+  margin: 35px 15px; /* Space between cards */
+  border: 1px solid #ddd; /* Add a border to each card */
+}
+
+.card-title a {
+  color: #333; /* Set the default color for the course title link */
+  text-decoration: none; /* Remove the underline from the link */
+}
+
+.card-title a:hover {
+  text-decoration: underline; /* Add an underline to the link on hover */
+}
+
+
+.dark-sidebar svg {
+  fill: red;
+}
+.dark-sidebar .link-cell a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.dark-sidebar .link-cell a.active-link {
+  color: red;
+  background-color: #fff;
+}
+
+.bi {
+  fill: currentColor;
+}
+.bi-person-circle {
+  fill: black;
+}
+
+/* 当链接处于活动状态时：SVG颜色为红色 */
+.active-link:focus .bi-person-circle,
+.active-link:active .bi-person-circle,
+.active-link:hover .bi-person-circle {
+  fill: red;
+}
+
+/* 默认状态 */
+.link-class {
+  color: inherit; /* 或其他默认颜色 */
+}
+
+/* 当链接处于活动状态时，字体颜色为黑色 */
+.link-class:focus,
+.link-class:active,
+.link-class:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.arrow {
+  padding: 0 10px; /* optional padding for spacing around the arrow */
+}
+

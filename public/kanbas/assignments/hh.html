@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="index.css"
+  rel="stylesheet"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="../../../public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <div class="container mt-3">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Course Name</li>
+        <li class="breadcrumb-item">Term</li>
+        <li class="breadcrumb-item">Section</li>
+        <li class="breadcrumb-item">Assignments</li>
+        <li class="breadcrumb-item active" aria-current="page">A1 ENV</li>
+      </ol>
+    </nav>
+
+    <div class="col-md-10">
+        <div class="mb-3">
+            <select id="publish-all" class="form-control">
+                <!-- ... options ... -->
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="a1-env+html" class="form-label">Assignment Name</label>
+            <input id="a1-env+html" placeholder="A1-ENV+HTML" class="form-control"/>
+            <textarea id="assignment-description" rows="4" placeholder="This is the assignment description." class="form-control mt-2"></textarea>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <label for="points" class="form-label">Points</label>
+                <input id="points" placeholder="100" class="form-control"/>
+            </div>
+            <!-- ... similar structure for the next form elements ... -->
+        </div>
+         <div class="row mt-3">
+        <div class="col-md-2">
+            <label for="grade-display" class="form-label">Display Grade as</label>
+        </div>
+        <div class="col-md-10">
+            <select id="grade-display" class="form-control">
+                <!-- ...options... -->
+            </select>
+        </div>
+    </div>
+
+    <!-- ...repeat for other fields... -->
+
+    <!-- Checkbox fields -->
+    <div class="mt-3">
+        <label>Online Entry Options</label>
+        <div>
+            <input type="checkbox" value="Text Entry" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy" class="ms-2">Text Entry</label>
+        </div>
+        <!-- ...repeat for other checkboxes... -->
+    </div>
+
+    <!-- ...repeat for other fields... -->
+
+    <div class="row mt-3">
+        <div class="col-md-2">
+            <label for="text-fields-due" class="form-label">Due</label>
+        </div>
+        <div class="col-md-10">
+            <input type="date" id="text-fields-due" value="2021-01-01" class="form-control" />
+        </div>
+    </div>
+
+    <!-- ...repeat for other date fields... -->
+
+    <div class="mt-3">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="button" class="btn btn-primary ms-2">Save</button>
+    </div>
+
+</div> <!-- Closing container div -->
+        <div class="mb-3">
+            <label>Online Entry Options</label>
+            <!-- ... checkboxes ... -->
+        </div>
+        
+        <!-- ... rest of the form elements in similar structure ... -->
+        
+        <div class="mt-3">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+        </div>
+    </div>
+</div>
