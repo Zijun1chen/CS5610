@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Button() {
     return (
       <div>
-        {/* Button Group */}
         <div>
           <div className="row justify-content-end pt-3">
             <div className="col-auto pe-0" data-bs-toggle="collapse" data-bs-target="#weekOne, #weekTwo, #weekThree">

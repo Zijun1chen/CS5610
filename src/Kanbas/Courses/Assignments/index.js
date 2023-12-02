@@ -14,7 +14,6 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <div className="away-from-edge">
-      {/* <h2>Assignments for course {courseId}</h2> */}
       <Button />
       <div className="list-group">
         <ul class="list-group border-start border-5 border-success ">

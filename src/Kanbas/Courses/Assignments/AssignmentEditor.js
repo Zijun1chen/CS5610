@@ -31,11 +31,7 @@ function AssignmentEditor() {
         className="btn btn-danger">
         Cancel
       </Link>
-      {/* <Link onClick={handleSave}
-            to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-success me-2">
-        Save
-      </Link> */}
+
       <button onClick={handleSave} className="btn btn-success me-2">
         Save
       </button>

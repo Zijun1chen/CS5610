@@ -5,7 +5,7 @@ import axios from "axios";
 function WorkingWithArrays() {
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const TODOS_API = "https://five610-node-caiirene.onrender.com/a5/todos";
+  const TODOS_API = "https://five610-app-node.onrender.com/a5/todos";
 
   const [id, setId] = useState(1);
   const [title, setTitle] = useState("Go to work");
@@ -289,7 +289,7 @@ function WorkingWithArrays() {
       <hr />
 
       <a
-        href={`http://five610-node-caiirene.onrender.com/a5/todos/${id}/title/${title}`}
+        href={`https://five610-app-node.onrender.com/a5/todos/${id}/title/${title}`}
         className="btn btn-primary"
       >
         Update Todo Title-1
