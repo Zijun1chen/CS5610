@@ -4,7 +4,7 @@ const request = axios.create({
   withCredentials: true,
 });
 export const BASE_API =
-  process.env.REACT_APP_BASE_API_URL || "https://fathomless-lowlands-96372-ded82e44cc86.herokuapp.com/";
+  process.env.REACT_APP_BASE_API_URL || "https://fathomless-lowlands-96372-ded82e44cc86.herokuapp.com";
 
 export const USERS_API = `${BASE_API}/api/users`;
 export const signin = async (credentials) => {
